@@ -19,7 +19,9 @@ class TypeController extends Controller
     {
         
         $types = Project::all();
-        //
+
+        return view('admin.types.index', compact('types'));
+
     }
 
     /**
@@ -29,7 +31,7 @@ class TypeController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.types.create');
     }
 
     /**
